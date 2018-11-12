@@ -24,7 +24,7 @@ namespace StockTwits
 
         public async Task CreateMessage(string token, string body)
         {
-            await SendRequest($"{CREATE_URL}?access_token={token}", $"body={body}&chart=https://charts.stocktwits.com/production/original_144406812.png");
+            await SendRequest($"{CREATE_URL}?access_token={token}", $"body={body}");
         }
 
         public async Task CreateMessageWithChart(string token, string body, string filepath)
